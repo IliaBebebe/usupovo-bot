@@ -20,8 +20,8 @@ if not BOT_TOKEN:
 # Параметры webhook
 WEB_SERVER_HOST = "0.0.0.0"
 WEB_SERVER_PORT = int(os.getenv("PORT", 8000))  # Render даёт PORT
-WEBHOOK_PATH = f"/webhook/{BOT_TOKEN}"
-# Замените на ваш URL после деплоя на Render:
+WEBHOOK_SECRET_PATH = os.getenv("WEBHOOK_SECRET_PATH", "a4VlADbUmAGAlucHI4444444reufjrnef444444YBLOgerIZ4VIniteEE44242")
+WEBHOOK_PATH = f"/webhook/{WEBHOOK_SECRET_PATH}"
 BASE_WEBHOOK_URL = os.getenv("WEBHOOK_URL", "https://usupovo-bot.onrender.com")
 
 # Хранилище вопросов (в памяти)
