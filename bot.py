@@ -23,7 +23,7 @@ WEB_SERVER_HOST = "0.0.0.0"
 WEB_SERVER_PORT = int(os.getenv("PORT", 8000))
 WEBHOOK_SECRET_PATH = os.getenv("WEBHOOK_SECRET_PATH", "a4VlADbUmAGAlucHI4444444reufjrnef444444YBLOgerIZ4VIniteEE44242")
 WEBHOOK_PATH = f"/webhook/{WEBHOOK_SECRET_PATH}"
-BASE_WEBHOOK_URL = os.getenv("WEBHOOK_URL", "https://usupovo-bot-ra4o.onrender.com/").strip()  # ← убран пробел!
+BASE_WEBHOOK_URL = os.getenv("WEBHOOK_URL", "https://usupovo-bot.onrender.com/").strip()  # ← убран пробел!
 
 def load_questions():
     if os.path.exists(QUESTIONS_FILE):
